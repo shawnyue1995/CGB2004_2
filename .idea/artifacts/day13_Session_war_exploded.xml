@@ -1,0 +1,23 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="day13-Session:war exploded">
+    <output-path>$PROJECT_DIR$/day13-Session/target/day13-Session</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <exploded>true</exploded>
+        <module>day13-Session</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="day13-Session" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/day13-Session/target/day13-Session/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="day13-Session/web/Web" />
+    </root>
+  </artifact>
+</component>

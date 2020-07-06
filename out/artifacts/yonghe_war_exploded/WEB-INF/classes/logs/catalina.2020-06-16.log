@@ -1,0 +1,124 @@
+16-Jun-2020 14:10:40.772 严重 [main] org.apache.catalina.startup.Catalina.stopServer Could not contact [localhost:[8005]]. Tomcat may not be running.
+16-Jun-2020 14:10:40.782 严重 [main] org.apache.catalina.startup.Catalina.stopServer Catalina.stop: 
+ java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:606)
+	at java.net.Socket.connect(Socket.java:555)
+	at java.net.Socket.<init>(Socket.java:451)
+	at java.net.Socket.<init>(Socket.java:228)
+	at org.apache.catalina.startup.Catalina.stopServer(Catalina.java:497)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.catalina.startup.Bootstrap.stopServer(Bootstrap.java:406)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:498)
+
+16-Jun-2020 14:26:45.826 严重 [main] org.apache.catalina.startup.Catalina.stopServer Could not contact [localhost:[8005]]. Tomcat may not be running.
+16-Jun-2020 14:27:00.624 严重 [main] org.apache.catalina.startup.Catalina.stopServer Could not contact [localhost:[8005]]. Tomcat may not be running.
+16-Jun-2020 14:27:00.630 严重 [main] org.apache.catalina.startup.Catalina.stopServer Catalina.stop: 
+ java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:606)
+	at java.net.Socket.connect(Socket.java:555)
+	at java.net.Socket.<init>(Socket.java:451)
+	at java.net.Socket.<init>(Socket.java:228)
+	at org.apache.catalina.startup.Catalina.stopServer(Catalina.java:497)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.catalina.startup.Bootstrap.stopServer(Bootstrap.java:406)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:498)
+
+16-Jun-2020 14:27:06.897 警告 [main] org.apache.tomcat.util.digester.SetPropertiesRule.begin [SetPropertiesRule]{Server/Service/Engine/Host/Context} Setting property 'source' to 'org.eclipse.jst.jee.server:day09' did not find a matching property.
+16-Jun-2020 14:27:06.921 警告 [main] org.apache.tomcat.util.digester.SetPropertiesRule.begin [SetPropertiesRule]{Server/Service/Engine/Host/Context} Setting property 'source' to 'org.eclipse.jst.jee.server:day10' did not find a matching property.
+16-Jun-2020 14:27:06.922 警告 [main] org.apache.tomcat.util.digester.SetPropertiesRule.begin [SetPropertiesRule]{Server/Service/Engine/Host/Context} Setting property 'source' to 'org.eclipse.jst.jee.server:day11-jsp' did not find a matching property.
+16-Jun-2020 14:27:06.923 警告 [main] org.apache.tomcat.util.digester.SetPropertiesRule.begin [SetPropertiesRule]{Server/Service/Engine/Host/Context} Setting property 'source' to 'org.eclipse.jst.jee.server:MavenSimpleProJavaWeb' did not find a matching property.
+16-Jun-2020 14:27:06.924 警告 [main] org.apache.tomcat.util.digester.SetPropertiesRule.begin [SetPropertiesRule]{Server/Service/Engine/Host/Context} Setting property 'source' to 'org.eclipse.jst.jee.server:yonghe-ssm' did not find a matching property.
+16-Jun-2020 14:27:06.926 警告 [main] org.apache.tomcat.util.digester.SetPropertiesRule.begin [SetPropertiesRule]{Server/Service/Engine/Host/Context} Setting property 'source' to 'org.eclipse.jst.jee.server:day13-cookie' did not find a matching property.
+16-Jun-2020 14:27:06.930 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.5.34
+16-Jun-2020 14:27:06.930 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Sep 4 2018 22:28:22 UTC
+16-Jun-2020 14:27:06.931 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.5.34.0
+16-Jun-2020 14:27:06.931 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+16-Jun-2020 14:27:06.932 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+16-Jun-2020 14:27:06.934 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+16-Jun-2020 14:27:06.935 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             D:\java\jdk\jre
+16-Jun-2020 14:27:06.936 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_251-b08
+16-Jun-2020 14:27:06.940 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+16-Jun-2020 14:27:06.947 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         D:\javaDevelop2004\apache-tomcat-8.5.34\apache-tomcat-8.5.34
+16-Jun-2020 14:27:06.949 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         D:\javaDevelop2004\apache-tomcat-8.5.34\apache-tomcat-8.5.34
+16-Jun-2020 14:27:06.950 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=D:\javaDevelop2004\apache-tomcat-8.5.34\apache-tomcat-8.5.34\conf\logging.properties
+16-Jun-2020 14:27:06.953 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+16-Jun-2020 14:27:06.954 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+16-Jun-2020 14:27:06.955 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+16-Jun-2020 14:27:06.957 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+16-Jun-2020 14:27:06.960 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=D:\javaDevelop2004\apache-tomcat-8.5.34\apache-tomcat-8.5.34
+16-Jun-2020 14:27:06.962 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=D:\javaDevelop2004\apache-tomcat-8.5.34\apache-tomcat-8.5.34
+16-Jun-2020 14:27:06.962 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=D:\javaDevelop2004\apache-tomcat-8.5.34\apache-tomcat-8.5.34\temp
+16-Jun-2020 14:27:06.964 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\java\jdk\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;D:\mariadb10.3.7\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;"D:\java\jdk\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath";C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;"D:\java\jdk\bin;";C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;;.]
+16-Jun-2020 14:27:07.279 信息 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+16-Jun-2020 14:27:07.304 严重 [main] org.apache.catalina.core.StandardService.initInternal Failed to initialize connector [Connector[HTTP/1.1-8080]]
+ org.apache.catalina.LifecycleException: Failed to initialize component [Connector[HTTP/1.1-8080]]
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:112)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:552)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:107)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:875)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:107)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:632)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:655)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:309)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:492)
+Caused by: org.apache.catalina.LifecycleException: Protocol handler initialization failed
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:995)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:107)
+	... 12 more
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:219)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1087)
+	at org.apache.tomcat.util.net.AbstractJsseEndpoint.init(AbstractJsseEndpoint.java:265)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:581)
+	at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:68)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:993)
+	... 13 more
+
+16-Jun-2020 14:27:07.330 信息 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+16-Jun-2020 14:27:08.945 信息 [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+16-Jun-2020 14:27:08.955 信息 [main] org.apache.catalina.startup.Catalina.load Initialization processed in 3134 ms
+16-Jun-2020 14:27:09.019 信息 [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+16-Jun-2020 14:27:09.021 信息 [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.34
+16-Jun-2020 14:27:15.959 信息 [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+16-Jun-2020 14:27:18.756 信息 [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+16-Jun-2020 14:27:18.767 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\javaDevelop2004\apache-tomcat-8.5.34\apache-tomcat-8.5.34\webapps\docs]
+16-Jun-2020 14:27:18.817 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\javaDevelop2004\apache-tomcat-8.5.34\apache-tomcat-8.5.34\webapps\docs] has finished in [49] ms
+16-Jun-2020 14:27:18.818 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\javaDevelop2004\apache-tomcat-8.5.34\apache-tomcat-8.5.34\webapps\examples]
+16-Jun-2020 14:27:19.536 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\javaDevelop2004\apache-tomcat-8.5.34\apache-tomcat-8.5.34\webapps\examples] has finished in [718] ms
+16-Jun-2020 14:27:19.543 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\javaDevelop2004\apache-tomcat-8.5.34\apache-tomcat-8.5.34\webapps\host-manager]
+16-Jun-2020 14:27:19.617 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\javaDevelop2004\apache-tomcat-8.5.34\apache-tomcat-8.5.34\webapps\host-manager] has finished in [74] ms
+16-Jun-2020 14:27:19.624 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\javaDevelop2004\apache-tomcat-8.5.34\apache-tomcat-8.5.34\webapps\manager]
+16-Jun-2020 14:27:19.699 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\javaDevelop2004\apache-tomcat-8.5.34\apache-tomcat-8.5.34\webapps\manager] has finished in [76] ms
+16-Jun-2020 14:27:19.700 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\javaDevelop2004\apache-tomcat-8.5.34\apache-tomcat-8.5.34\webapps\ROOT]
+16-Jun-2020 14:27:19.733 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\javaDevelop2004\apache-tomcat-8.5.34\apache-tomcat-8.5.34\webapps\ROOT] has finished in [33] ms
+16-Jun-2020 14:27:19.740 信息 [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+16-Jun-2020 14:27:19.760 信息 [main] org.apache.catalina.startup.Catalina.start Server startup in 10804 ms

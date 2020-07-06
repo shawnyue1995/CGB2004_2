@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>引入js</title>
+    <!--第一种引入方式-->
+    <script type="text/javascript">
+        alert("第一种引入方式");
+        /*
+        var x;
+        alert(x);
+         */
+    </script>
+    <!--第二种引入方式(引入demo.js文件)-->
+    <script src="demo.js">
+        alert("333333");//这里不要写js代码,写了也不会执行
+    </script>
+
+</head>
+<body>
+        <input type="button" value="dont touch me"
+            onclick="alert('fuck !')"
+        >
+</body>
+</html>

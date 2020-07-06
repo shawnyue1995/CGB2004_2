@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="yonghe-ssm:war">
+    <output-path>$PROJECT_DIR$/yonghe-ssm/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>yonghe-ssm</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="yonghe-ssm-0.0.1-SNAPSHOT.war">
+      <element id="artifact" artifact-name="yonghe-ssm:war exploded" />
+    </root>
+  </artifact>
+</component>

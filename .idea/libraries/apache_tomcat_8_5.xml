@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="apache-tomcat-8.5">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../javaDevelop2004/apache-tomcat-8.5.34/apache-tomcat-8.5.34" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/../javaDevelop2004/apache-tomcat-8.5.34/apache-tomcat-8.5.34/webapps/docs/appdev/sample/src" />
+      <root url="file://$PROJECT_DIR$/../javaDevelop2004/apache-tomcat-8.5.34/apache-tomcat-8.5.34/webapps/examples/WEB-INF/classes" />
+      <root url="file://$PROJECT_DIR$/../javaDevelop2004/apache-tomcat-8.5.34/apache-tomcat-8.5.34/webapps/examples/WEB-INF/jsp/applet" />
+      <root url="file://$PROJECT_DIR$/../javaDevelop2004/apache-tomcat-8.5.34/apache-tomcat-8.5.34/webapps/examples/jsp/plugin/applet" />
+      <root url="file://$PROJECT_DIR$/../javaDevelop2004/apache-tomcat-8.5.34/apache-tomcat-8.5.34/work/Catalina/localhost/ROOT" />
+      <root url="file://$PROJECT_DIR$/../javaDevelop2004/apache-tomcat-8.5.34/apache-tomcat-8.5.34/work/Catalina/localhost/day11-jsp" />
+      <root url="file://$PROJECT_DIR$/../javaDevelop2004/apache-tomcat-8.5.34/apache-tomcat-8.5.34/work/Catalina/localhost/yonghe-ssm" />
+    </SOURCES>
+  </library>
+</component>

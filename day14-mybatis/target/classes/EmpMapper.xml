@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--
+	namespace一般指定为当前文件的所在包路径+文件名
+	将来在程序中通过[ namespace + id ]定位到执行哪一条SQL语句]
+	并且namespace、id的值不能重复
+ -->
+<mapper namespace="EmpMapper">
+    <!-- 通过select、insert、update、delete标签声明要执行的SQL -->
+    <select id="findAll" resultType="com.tedu.pojo.Emp">
+		select * from emp
+	</select>
+
+    <!--
+    resultType：返回值类型，简单类型（例如：Integer，String，Emp等）
+        如果返回集合(List<Emp>)，只需配置集合中的元素类型即可！
+    resultMap：复杂对象结构（例如多表关联查询等），后面用到再讲解
+     -->
+    <!-- 练习2: 新增员工信息: 赵云 保安 6000
+增删改的标签上不用指定resultType, 因为返回值都是int类型
+-->
+    <insert id="insert02">
+        insert into emp value(null,'赵云','保镖',20000)
+    </insert>
+    <!--练习3：修改员工信息：赵云 保镖 20000-->
+        <update id="update03">
+            update emp set job='保镖',salary='20000' where name='赵云'
+        </update>
+    <!--练习4: 删除name为'赵云'的记录 -->
+    <delete id="delete04">
+        delete from emp where name='赵云'
+    </delete>
+<!--    &lt;!&ndash;练习5: 查询emp表中指定id的员工信息&ndash;&gt;-->
+    <select id="findById05" resultType="com.tedu.pojo.Emp">
+        select * from emp where id=#{id}
+    </select>
+    <!-- 练习6: 新增员工信息: 张飞 Java开发工程师 15000
+            如果使用map封装sql语句中的参数,需要保证#{}中的名称和map集合
+            中的key保持一致(因为框架底层会根据#{}中的名称作为key到map中取值)
+    -->
+    <insert id="insert06">
+        insert into emp value(null,#{name},#{job},#{salary})
+    </insert>
+    <!--  练习7: 修改员工信息: 张飞 架构师 25000
+    如果使用Emp对象封装SQL语句中的参数,需要保证#{}中的名称在Emp类中有对应的getXxx方法,
+    或者是保证#{}中的名称和Emp类中的属性名保持一致!
+-->
+    <update id="update07">
+        update emp set job=#{job},salary=#{salary} where name=#{name};
+    </update>
+    <!-- 练习8：删除emp表中指定id的员工信息 -->
+    <delete id="delete08">
+        delete from emp where id=#{id}
+    </delete>
+    <!-- 练习9: 动态指定要查询的列 -->
+    <select id="findAll02" resultType="com.tedu.pojo.Emp">
+        select ${colName} from emp
+    </select>
+    <!-- 练习10: 根据name模糊查询emp表:使用#{}占位符
+				查询姓名中包含'刘'的员工信息
+		-->
+    <select id="findByName10" resultType="com.tedu.pojo.Emp">
+        select * from emp where name like #{name}
+    </select>
+    <!-- 练习11: 根据name模糊查询emp表:shiyong${}占位符 -->
+    <select id="findByName11" resultType="com.tedu.pojo.Emp">
+        select * from emp where name like '%${name}%'
+    </select>
+    <!-- 练习12: 根据薪资查询员工信息
+ 		如果没有参数, 则不执行where子句, 默认查询所有员工：
+ 		select * from emp
+ 		如果参数中只有minSal(即minSal不为null), 则：... where salary > minSal
+		如果参数中只有maxSal(即maxSal不为null), 则：... where salary < maxSal
+ 		如果参数有 minSal、maxSal(即minSal、maxSal不为null), 则：... where salary > minSal and salary < maxSal
+ 		-->
+    <select id="findBySal12" resultType="com.tedu.pojo.Emp">
+        select * from emp
+        <where>
+            <if test="minSal !=null">
+                and salary >=#{minSal}
+            </if>
+<!--             <要用&lt;转译 -->
+            <if test="maxSal !=null">
+                and salary &lt;=#{maxSal}
+            </if>
+        </where>
+    </select>
+    <!-- 			/*
+	 * 练习13: 根据薪资查询员工信息
+	 * 如果没有参数, 则不执行where子句, 默认查询所有员工：select * from emp
+	 * 如果参数中只有minSal(即minSal不为null), 则：... where salary > minSal
+	 * 如果参数中只有maxSal(即maxSal不为null), 则：... where salary < maxSal
+	 * 如果参数有 minSal、maxSal(即minSal、maxSal不为null), 则：... where salary > minSal and salary < maxSal
+	 */	 -->
+    <select id="findBySal13" resultType="com.tedu.pojo.Emp">
+        select * from emp
+        <where>
+            <if test="minSal !=null">
+                and salary &lt;=#{minSal}
+            </if>
+            <!--             <要用&lt;转译 -->
+            <if test="maxSal !=null">
+            and salary &lt;=#{maxSal}
+            </if>
+        </where>
+    </select>
+    <!-- 练习14: 根据员工的id批量删除员工信息
+   Integer[] ids={1,3,5,7}
+   delete from emp where id in(1,3,5,7)
+-->
+    <delete id="deleteByIds">
+        delete from emp where id in
+        <foreach collection="array" open="(" item="id" separator="," close=")">
+            #{id}
+        </foreach>
+    </delete>
+    <!-- 		练习15: 根据员工的id批量更新员工信息
+ 	将id为 2、4、6、8的员工的薪资在原有基础上增加1000
+ 	update emp set salary=salary + 1000
+	where id in(2,4,6,8); -->
+    <update id="updateByIds">
+        update emp set salary=salary+#{sal} where id in
+        <foreach collection="array" open="(" item="id" separator="," close=")">
+            #{id}
+        </foreach>
+    </update>
+    <!-- 		 练习16：根据员工的id批量查询指定id的员工信息
+  			查询id为 2、4、6、8的员工的信息 -->
+    <select id="findByIds" resultType="com.tedu.pojo.Emp">
+        select * from emp where id in
+        <foreach collection="array" open="(" item="id" separator="," close=")">
+            #{id}
+        </foreach>
+    </select>
+</mapper>

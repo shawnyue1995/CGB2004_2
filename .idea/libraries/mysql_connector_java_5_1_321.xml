@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="mysql-connector-java-5.1.321">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../kejian/二阶段/day01-05/课前资料(day01-day05)/课前资料(day01-day05)/day03.04-jdbc/resource/mysql-connector-java-5.1.32.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="MavenSimpleWeb:war exploded2">
+    <output-path>$PROJECT_DIR$/out/artifacts/MavenSimpleWeb_war_exploded2</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="MavenSimpleWeb/web/Web" />
+    </root>
+  </artifact>
+</component>

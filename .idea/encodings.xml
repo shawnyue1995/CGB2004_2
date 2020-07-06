@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/MavenSimpleWeb/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/MavenSimpleWeb/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/day13-Session/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/day13-Session/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/day13-cookie/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/day13-cookie/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/day14-mybatis/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/day14-mybatis/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/day16-springmvc/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/day16-springmvc/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/fuxi-cookie/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/fuxi-cookie/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/fuxi-session/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/fuxi-session/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/yonghe/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/yonghe/src/main/resources" charset="UTF-8" />
+  </component>
+</project>

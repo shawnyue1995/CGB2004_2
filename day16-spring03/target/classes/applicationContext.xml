@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+    <!-- 将EmpService接口的实现类声明到spring容器中,由spring容器创建该类的实例
+        id就是一个编号,将来用于从spring容器中获取实例,这里自己申明的bean标签的id值
+        是可以自定义的,通常是类名(或类的父接口名),首字母小写
+     -->
+    <bean id="empService" class="com.tedu.service.EmpServiceImpl"></bean>
+
+    <!-- 将EmpDao接口的实现类声明到spring容器中,由spring容器创建该类的实例-->
+    <bean id="empdao" class="com.tedu.dao.EmpDaoImpl"></bean>
+
+    <!-- 将User类声明到spring容器中,由spring容器创建该类的实例
+    通过spring容器获取实例,默认是单实例,如果要修改为多实例,可以通过scope属性进行设置
+    scope="singleton | prototype"
+ -->
+    <bean id="user" scope="prototype" class="com.tedu.pojo.User">
+        <!-- set方法注入,为user对象的name属性赋值,赋值为"韩少云"
+要求property标签上的name属性值,要在User对象中有对应的set方法
+info属性是对象属性,也就是说,需要获取一个UserInfo类的对象赋值给User
+-->
+<!--        <property name="name" value="韩少云"/>
+        <property name="age" value="30"/>
+        <property name="info" ref="userInfo"/>-->
+        <!-- 构造方法注入 ,为user对象的name,age,info属性赋值-->
+        <constructor-arg name="name" value="马云"/>
+        <constructor-arg name="age" value="38"/>
+        <constructor-arg name="info" ref="userInfo"/>
+    </bean>
+    <!-- 将UserInfo类声明到spring容器中,有spring容器创建该类的实例 -->
+    <bean id="userInfo" class="com.tedu.pojo.UserInfo"></bean>
+</beans>

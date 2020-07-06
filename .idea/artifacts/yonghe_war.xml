@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="yonghe:war">
+    <output-path>$PROJECT_DIR$/out/artifacts/yonghe_war</output-path>
+    <root id="archive" name="yonghe_war.war">
+      <element id="artifact" artifact-name="yonghe:war exploded" />
+    </root>
+  </artifact>
+</component>

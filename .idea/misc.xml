@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/day13-cookie" />
+    <file type="web" url="file://$PROJECT_DIR$/day13-Session" />
+    <file type="web" url="file://$PROJECT_DIR$/day13-Session/day13-Session" />
+    <file type="web" url="file://$PROJECT_DIR$/day14-mybatis" />
+    <file type="web" url="file://$PROJECT_DIR$/day16-springmvc" />
+    <file type="web" url="file://$PROJECT_DIR$/fuxi-cookie" />
+    <file type="web" url="file://$PROJECT_DIR$/fuxi-session" />
+    <file type="web" url="file://$PROJECT_DIR$/MavenSimpleWeb" />
+    <file type="web" url="file://$PROJECT_DIR$/untitled" />
+    <file type="web" url="file://$PROJECT_DIR$/yonghe" />
+    <file type="web" url="file://$PROJECT_DIR$/yonghe-ssm" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/MavenSimpleWeb/pom.xml" />
+        <option value="$PROJECT_DIR$/yonghe-ssm/pom.xml" />
+        <option value="$PROJECT_DIR$/day13-cookie/pom.xml" />
+        <option value="$PROJECT_DIR$/day13-Session/day13-Session/pom.xml" />
+        <option value="$PROJECT_DIR$/day13-Session/pom.xml" />
+        <option value="$PROJECT_DIR$/fuxi-cookie/pom.xml" />
+        <option value="$PROJECT_DIR$/fuxi-session/pom.xml" />
+        <option value="$PROJECT_DIR$/mybatis/pom.xml" />
+        <option value="$PROJECT_DIR$/day15-mybatis/pom.xml" />
+        <option value="$PROJECT_DIR$/../javaDevelop/STSWS_CGB2004_WEB/day16-spring01/pom.xml" />
+        <option value="$PROJECT_DIR$/day16-spring01/pom.xml" />
+        <option value="$PROJECT_DIR$/day16-spring02/pom.xml" />
+        <option value="$PROJECT_DIR$/day16-spring03/pom.xml" />
+        <option value="$PROJECT_DIR$/day16-springmvc/pom.xml" />
+        <option value="$PROJECT_DIR$/yonghe/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectResources">
+    <resource url="http://java.sun.com/jsp/jstl/core" location="$PROJECT_DIR$/../../kejian/二阶段/课前资料+讲义(day11-day15)/day11-jsp+jstl/jstl-1.2.jar!/META-INF/c.tld" />
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

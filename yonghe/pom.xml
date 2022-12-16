@@ -62,7 +62,7 @@
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-webmvc</artifactId>
-      <version>4.1.3.RELEASE</version>
+      <version>5.2.20.RELEASE</version>
     </dependency>
     <!--这个jar文件包含对Spring对JDBC数据访问进行封装的所有类 -->
     <dependency>
